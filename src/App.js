@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import ContactsApp from './components/ContactsApp';
+
+let contacts = [
+  { name: "Cassio Zen" , email : "cassiozen@gmail.com" },
+  { name: "Dan Abramov" , email : "gaearon@somewhere.com" },
+  { name: "Pete Hunt" , email : "floydophone@somewhere.com" },
+  { name: "Paul O'Shannessy" , email : "zpao@somewhere.com" },
+  { name: "Ryan Florence" , email : "rpflorence@somewhere.com" },
+  { name: "Sebastian Markbage" , email : "sebmarkbage@here.com" },
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ContactsApp contacts={contacts} />
+  )
 }
 
 export default App;
