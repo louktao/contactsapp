@@ -12,6 +12,7 @@ class ContactsApp extends Component{
     }
 
     handleUserInput(searchTerm){
+        // 入力値がステータスの変数に設定
         this.setState({filterText:searchTerm})
     }
 
